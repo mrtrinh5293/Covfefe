@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		930CBB9924F056EB00E453BA /* OptionTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930CBB9824F056EB00E453BA /* OptionTabView.swift */; };
+		9388217E24E5AAFB0096FBA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388217D24E5AAFB0096FBA9 /* AppDelegate.swift */; };
+		9388218024E5AAFB0096FBA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388217F24E5AAFB0096FBA9 /* SceneDelegate.swift */; };
+		9388218224E5AAFB0096FBA9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388218124E5AAFB0096FBA9 /* HomeView.swift */; };
+		9388218424E5AAFD0096FBA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9388218324E5AAFD0096FBA9 /* Assets.xcassets */; };
+		9388218724E5AAFD0096FBA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9388218624E5AAFD0096FBA9 /* Preview Assets.xcassets */; };
+		9388218A24E5AAFD0096FBA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9388218824E5AAFD0096FBA9 /* LaunchScreen.storyboard */; };
+		9388219424E5C1E00096FBA9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9388219324E5C1E00096FBA9 /* GoogleService-Info.plist */; };
+		9388219824E5D1E60096FBA9 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388219724E5D1E60096FBA9 /* Drink.swift */; };
+		9388219A24E5D9220096FBA9 /* FirebaseReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388219924E5D9220096FBA9 /* FirebaseReference.swift */; };
+		9388219C24E5DAF50096FBA9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388219B24E5DAF50096FBA9 /* Constants.swift */; };
+		938821A024E6E6980096FBA9 /* DrinkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388219F24E6E6980096FBA9 /* DrinkRow.swift */; };
+		938821A224E6E85A0096FBA9 /* DrinkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938821A124E6E85A0096FBA9 /* DrinkItem.swift */; };
+		938821A424E719390096FBA9 /* DrinkListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938821A324E719390096FBA9 /* DrinkListener.swift */; };
+		938821A724E869520096FBA9 /* DrinkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938821A624E869520096FBA9 /* DrinkDetail.swift */; };
+		938821A924E873280096FBA9 /* OrderBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938821A824E873280096FBA9 /* OrderBasket.swift */; };
+		938821AB24EAD7F10096FBA9 /* BasketListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938821AA24EAD7F10096FBA9 /* BasketListener.swift */; };
+		938821AD24EAE1680096FBA9 /* OrderBasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938821AC24EAE1680096FBA9 /* OrderBasketView.swift */; };
+		938821AF24EAE9CC0096FBA9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938821AE24EAE9CC0096FBA9 /* Extensions.swift */; };
+		938821B324EB09970096FBA9 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938821B224EB09970096FBA9 /* Order.swift */; };
+		938821B524EB0E830096FBA9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938821B424EB0E830096FBA9 /* LoginView.swift */; };
+		938821B824EB1C280096FBA9 /* FinishRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938821B724EB1C270096FBA9 /* FinishRegistrationView.swift */; };
+		938821BA24EB24750096FBA9 /* FUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938821B924EB24750096FBA9 /* FUser.swift */; };
+		938A01AE24EF2C4B005C607E /* Shaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A01AD24EF2C4B005C607E /* Shaper.swift */; };
+		938A01B024F01E80005C607E /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A01AF24F01E80005C607E /* MainTab.swift */; };
+		93AE0C3C24EDCD360014AE7D /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE0C3B24EDCD360014AE7D /* UserSettings.swift */; };
+		C7E23C7A636911760259A938 /* Pods_CoffeeShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32D8C5C00E0AA1016BCACDB /* Pods_CoffeeShop.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		706851B7A8218785C9E5F8E8 /* Pods-CoffeeShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeShop.debug.xcconfig"; path = "Target Support Files/Pods-CoffeeShop/Pods-CoffeeShop.debug.xcconfig"; sourceTree = "<group>"; };
+		891ADE20D591387009048BB4 /* Pods-CoffeeShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeShop.release.xcconfig"; path = "Target Support Files/Pods-CoffeeShop/Pods-CoffeeShop.release.xcconfig"; sourceTree = "<group>"; };
+		930CBB9824F056EB00E453BA /* OptionTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTabView.swift; sourceTree = "<group>"; };
+		9388217A24E5AAFB0096FBA9 /* CoffeeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9388217D24E5AAFB0096FBA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9388217F24E5AAFB0096FBA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9388218124E5AAFB0096FBA9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9388218324E5AAFD0096FBA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9388218624E5AAFD0096FBA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9388218924E5AAFD0096FBA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9388218B24E5AAFD0096FBA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9388219324E5C1E00096FBA9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9388219724E5D1E60096FBA9 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		9388219924E5D9220096FBA9 /* FirebaseReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseReference.swift; sourceTree = "<group>"; };
+		9388219B24E5DAF50096FBA9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9388219F24E6E6980096FBA9 /* DrinkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkRow.swift; sourceTree = "<group>"; };
+		938821A124E6E85A0096FBA9 /* DrinkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkItem.swift; sourceTree = "<group>"; };
+		938821A324E719390096FBA9 /* DrinkListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkListener.swift; sourceTree = "<group>"; };
+		938821A624E869520096FBA9 /* DrinkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetail.swift; sourceTree = "<group>"; };
+		938821A824E873280096FBA9 /* OrderBasket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBasket.swift; sourceTree = "<group>"; };
+		938821AA24EAD7F10096FBA9 /* BasketListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketListener.swift; sourceTree = "<group>"; };
+		938821AC24EAE1680096FBA9 /* OrderBasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBasketView.swift; sourceTree = "<group>"; };
+		938821AE24EAE9CC0096FBA9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		938821B224EB09970096FBA9 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		938821B424EB0E830096FBA9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		938821B724EB1C270096FBA9 /* FinishRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishRegistrationView.swift; sourceTree = "<group>"; };
+		938821B924EB24750096FBA9 /* FUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUser.swift; sourceTree = "<group>"; };
+		938A01AD24EF2C4B005C607E /* Shaper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shaper.swift; sourceTree = "<group>"; };
+		938A01AF24F01E80005C607E /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
+		93AE0C3B24EDCD360014AE7D /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		C32D8C5C00E0AA1016BCACDB /* Pods_CoffeeShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeeShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9388217724E5AAFB0096FBA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E23C7A636911760259A938 /* Pods_CoffeeShop.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19D84BCD4BA0DD6C75B7AA20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C32D8C5C00E0AA1016BCACDB /* Pods_CoffeeShop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52AFC91AED90092B79F6C730 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				706851B7A8218785C9E5F8E8 /* Pods-CoffeeShop.debug.xcconfig */,
+				891ADE20D591387009048BB4 /* Pods-CoffeeShop.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9388217124E5AAFB0096FBA9 = {
+			isa = PBXGroup;
+			children = (
+				9388217C24E5AAFB0096FBA9 /* CoffeeShop */,
+				9388217B24E5AAFB0096FBA9 /* Products */,
+				52AFC91AED90092B79F6C730 /* Pods */,
+				19D84BCD4BA0DD6C75B7AA20 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9388217B24E5AAFB0096FBA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9388217A24E5AAFB0096FBA9 /* CoffeeShop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9388217C24E5AAFB0096FBA9 /* CoffeeShop */ = {
+			isa = PBXGroup;
+			children = (
+				9388217D24E5AAFB0096FBA9 /* AppDelegate.swift */,
+				9388217F24E5AAFB0096FBA9 /* SceneDelegate.swift */,
+				938821B624EB0E8A0096FBA9 /* Views */,
+				938821A524E7193F0096FBA9 /* FirebaseListener */,
+				9388219E24E6DD860096FBA9 /* Model */,
+				9388219D24E6DD710096FBA9 /* Helpers */,
+				938A01AC24EF2C30005C607E /* CustomeDesign */,
+				9388218324E5AAFD0096FBA9 /* Assets.xcassets */,
+				9388218824E5AAFD0096FBA9 /* LaunchScreen.storyboard */,
+				9388218B24E5AAFD0096FBA9 /* Info.plist */,
+				9388219324E5C1E00096FBA9 /* GoogleService-Info.plist */,
+				9388218524E5AAFD0096FBA9 /* Preview Content */,
+			);
+			path = CoffeeShop;
+			sourceTree = "<group>";
+		};
+		9388218524E5AAFD0096FBA9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9388218624E5AAFD0096FBA9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9388219D24E6DD710096FBA9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9388219924E5D9220096FBA9 /* FirebaseReference.swift */,
+				9388219B24E5DAF50096FBA9 /* Constants.swift */,
+				938821AE24EAE9CC0096FBA9 /* Extensions.swift */,
+				93AE0C3B24EDCD360014AE7D /* UserSettings.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9388219E24E6DD860096FBA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9388219724E5D1E60096FBA9 /* Drink.swift */,
+				938821A824E873280096FBA9 /* OrderBasket.swift */,
+				938821B224EB09970096FBA9 /* Order.swift */,
+				938821B924EB24750096FBA9 /* FUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		938821A524E7193F0096FBA9 /* FirebaseListener */ = {
+			isa = PBXGroup;
+			children = (
+				938821A324E719390096FBA9 /* DrinkListener.swift */,
+				938821AA24EAD7F10096FBA9 /* BasketListener.swift */,
+			);
+			path = FirebaseListener;
+			sourceTree = "<group>";
+		};
+		938821B624EB0E8A0096FBA9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9388218124E5AAFB0096FBA9 /* HomeView.swift */,
+				938A01AF24F01E80005C607E /* MainTab.swift */,
+				930CBB9824F056EB00E453BA /* OptionTabView.swift */,
+				9388219F24E6E6980096FBA9 /* DrinkRow.swift */,
+				938821A124E6E85A0096FBA9 /* DrinkItem.swift */,
+				938821A624E869520096FBA9 /* DrinkDetail.swift */,
+				938821AC24EAE1680096FBA9 /* OrderBasketView.swift */,
+				938821B424EB0E830096FBA9 /* LoginView.swift */,
+				938821B724EB1C270096FBA9 /* FinishRegistrationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		938A01AC24EF2C30005C607E /* CustomeDesign */ = {
+			isa = PBXGroup;
+			children = (
+				938A01AD24EF2C4B005C607E /* Shaper.swift */,
+			);
+			path = CustomeDesign;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9388217924E5AAFB0096FBA9 /* CoffeeShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9388218E24E5AAFD0096FBA9 /* Build configuration list for PBXNativeTarget "CoffeeShop" */;
+			buildPhases = (
+				73997C65C58D1EC3491424FA /* [CP] Check Pods Manifest.lock */,
+				9388217624E5AAFB0096FBA9 /* Sources */,
+				9388217724E5AAFB0096FBA9 /* Frameworks */,
+				9388217824E5AAFB0096FBA9 /* Resources */,
+				B5219D967D1EDD8B46B0E65D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoffeeShop;
+			productName = CoffeeShop;
+			productReference = 9388217A24E5AAFB0096FBA9 /* CoffeeShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9388217224E5AAFB0096FBA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Duc Dang";
+				TargetAttributes = {
+					9388217924E5AAFB0096FBA9 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 9388217524E5AAFB0096FBA9 /* Build configuration list for PBXProject "CoffeeShop" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9388217124E5AAFB0096FBA9;
+			productRefGroup = 9388217B24E5AAFB0096FBA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9388217924E5AAFB0096FBA9 /* CoffeeShop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9388217824E5AAFB0096FBA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9388218A24E5AAFD0096FBA9 /* LaunchScreen.storyboard in Resources */,
+				9388219424E5C1E00096FBA9 /* GoogleService-Info.plist in Resources */,
+				9388218724E5AAFD0096FBA9 /* Preview Assets.xcassets in Resources */,
+				9388218424E5AAFD0096FBA9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73997C65C58D1EC3491424FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoffeeShop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5219D967D1EDD8B46B0E65D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoffeeShop/Pods-CoffeeShop-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoffeeShop/Pods-CoffeeShop-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoffeeShop/Pods-CoffeeShop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9388217624E5AAFB0096FBA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				938821A924E873280096FBA9 /* OrderBasket.swift in Sources */,
+				938A01B024F01E80005C607E /* MainTab.swift in Sources */,
+				9388219A24E5D9220096FBA9 /* FirebaseReference.swift in Sources */,
+				938A01AE24EF2C4B005C607E /* Shaper.swift in Sources */,
+				938821B324EB09970096FBA9 /* Order.swift in Sources */,
+				93AE0C3C24EDCD360014AE7D /* UserSettings.swift in Sources */,
+				938821A224E6E85A0096FBA9 /* DrinkItem.swift in Sources */,
+				938821B824EB1C280096FBA9 /* FinishRegistrationView.swift in Sources */,
+				938821AB24EAD7F10096FBA9 /* BasketListener.swift in Sources */,
+				9388217E24E5AAFB0096FBA9 /* AppDelegate.swift in Sources */,
+				938821AD24EAE1680096FBA9 /* OrderBasketView.swift in Sources */,
+				938821A024E6E6980096FBA9 /* DrinkRow.swift in Sources */,
+				938821A424E719390096FBA9 /* DrinkListener.swift in Sources */,
+				938821B524EB0E830096FBA9 /* LoginView.swift in Sources */,
+				938821BA24EB24750096FBA9 /* FUser.swift in Sources */,
+				930CBB9924F056EB00E453BA /* OptionTabView.swift in Sources */,
+				9388219824E5D1E60096FBA9 /* Drink.swift in Sources */,
+				9388218024E5AAFB0096FBA9 /* SceneDelegate.swift in Sources */,
+				938821A724E869520096FBA9 /* DrinkDetail.swift in Sources */,
+				9388218224E5AAFB0096FBA9 /* HomeView.swift in Sources */,
+				9388219C24E5DAF50096FBA9 /* Constants.swift in Sources */,
+				938821AF24EAE9CC0096FBA9 /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9388218824E5AAFD0096FBA9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9388218924E5AAFD0096FBA9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9388218C24E5AAFD0096FBA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9388218D24E5AAFD0096FBA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9388218F24E5AAFD0096FBA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 706851B7A8218785C9E5F8E8 /* Pods-CoffeeShop.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CoffeeShop/Preview Content\"";
+				DEVELOPMENT_TEAM = DMUGLP379U;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CoffeeShop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = trungduc.CoffeeShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9388219024E5AAFD0096FBA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 891ADE20D591387009048BB4 /* Pods-CoffeeShop.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CoffeeShop/Preview Content\"";
+				DEVELOPMENT_TEAM = DMUGLP379U;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CoffeeShop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = trungduc.CoffeeShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9388217524E5AAFB0096FBA9 /* Build configuration list for PBXProject "CoffeeShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9388218C24E5AAFD0096FBA9 /* Debug */,
+				9388218D24E5AAFD0096FBA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9388218E24E5AAFD0096FBA9 /* Build configuration list for PBXNativeTarget "CoffeeShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9388218F24E5AAFD0096FBA9 /* Debug */,
+				9388219024E5AAFD0096FBA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9388217224E5AAFB0096FBA9 /* Project object */;
+}
